@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/CSSMain/MAIN.css">
+    <link rel="stylesheet" href="./CSS/CSSMain/MainHover.css">
+    <link rel="stylesheet" href="./CSS/CSSMain/MainClock.css">
+    <link rel="stylesheet" href="./CSS/CSSMain/MainMediaQuery.css">
+    <link rel="stylesheet" href="./CSS/fadeinani.css">
+    <!-- 구글 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- 구글 폰트 링크 -->
+    <script src="https://kit.fontawesome.com/20ae907524.js" crossorigin="anonymous"></script>
+    <script src="JS/MAIN/MainUserAgent.js" defer></script>
+    <script src="./JS/MAIN/Main.js" defer></script>
+    <script src="./JS/MAIN/MainClock.js" defer></script>
+    <script src="./JS/MAIN/MainRandom.js" defer></script>
+    <title>SharingRecipes COFFEE</title>
+</head>
+<body>
+
+<nav class="navbar">  
+
+    <div class="navbar_logo">
+        <a href="#"><i class="fas fa-coffee"></i> Sharing Recipes</a>
+    </div>
+
+    <ul class="navbar_menu">
+        <li class="menu_item"><a id="menu_item_link" href="#">Home</a></li>
+        <li class="menu_item"><a id="menu_item_link" href="#">Gallery</a></li>
+        <li class="menu_item"><a id="menu_item_link" href="Recipes.html">Recipes</a></li>
+        <li class="menu_item"><a id="menu_item_link" href="#">Study</a></li>
+        <li class="menu_item"><a id="menu_item_link" href="#">FAQ</a></li>
+    </ul>
+
+    <ul class="navbar_icon">
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+
+    <label for="check">
+        <input type="checkbox" id="check"/> 
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+</nav>
+
+<section>
+    <div class="clock_img">
+        <img src="./IMG/maincoffeeanother.jpg" width="100%">
+        <div id="clock_text">
+            <h1 id="clock">00:00</h1>
+            <h2 id="clock_item">Wish you happiness</h2>
+            <div id="clock_random">
+                <div>오늘 이 음료는 어떠세요?</div>
+                <a href="#" id="DrinkRecipes" style="color: white;"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="foo">
+    <div class="foo_icon"><i class="fas fa-coffee"></i></div>
+    <div id="copyright">COPYRIGHT SEDY All Rights Reserved.</div>
+    <div id="foo_userAgent">InternetBrowser is Not Support.</div>
+</footer>
+
+</body>
+</html>

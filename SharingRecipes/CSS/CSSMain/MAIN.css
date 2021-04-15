@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i{
+    padding-left: 16px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 20px 12px;
+}
+
+.navbar_logo{
+    font-weight:bold;
+    font-size: 27.5px;
+}
+
+.navbar_logo i{
+    color: black;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+}
+
+.navbar_menu .menu_item{
+    padding: 8px 20px;
+}
+
+.navbar_icon{
+    display: flex;
+    list-style: none;
+    padding: 8px 20px;
+    letter-spacing: 20px;
+    padding-left: 0px;
+}
+
+#check{
+    display: none;
+
+}
+
+.foo{
+    margin: 0px;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: #FFEFE3;
+}
+
+.foo_icon{
+    font-size: 50px;
+}
+
+

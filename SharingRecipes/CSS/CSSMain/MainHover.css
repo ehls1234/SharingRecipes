@@ -1,0 +1,22 @@
+/*hover*/
+.navbar_menu .menu_item a:hover{
+    transition: background-color .5s;
+    color: white;
+    background-color: gray;
+    border-radius: 6px;
+}
+
+#menu_item_link{
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+#clock_random #DrinkRecipes:hover{
+    transition: background-color .5s;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 6px;
+    padding: 10px 20px;
+
+}
+/*hover end*/

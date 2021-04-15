@@ -1,0 +1,39 @@
+/*clock*/
+.clock_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock_text{
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#clock, #clock_item{
+    display: flex;
+    color: white;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#clock_random{
+    font-family: 'Nanum Pen Script', cursive;
+    margin: 12.5px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#clock_random #DrinkRecipes{
+    display: inline-block;
+    padding: 10px 0;
+}
+/*clock end*/
