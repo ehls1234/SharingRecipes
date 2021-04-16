@@ -18,6 +18,8 @@
     <script src="./JS/MAIN/Main.js" defer></script>
     <script src="./JS/MAIN/MainClock.js" defer></script>
     <script src="./JS/MAIN/MainRandom.js" defer></script>
+    <script src="./JS/MAIN/MainOnOff.js" defer></script>
+    <script src="JS/MAIN/Weather.js" defer></script>
     <title>SharingRecipes COFFEE</title>
 </head>
 <body>
@@ -60,15 +62,17 @@
                 <div>오늘 이 음료는 어떠세요?</div>
                 <a href="#" id="DrinkRecipes" style="color: white;"></a>
             </div>
+            <span id="js-weather" style="display: none; padding: 20px;"></span>
+            <input id="MainTextOnOff" type="button" value="Weather" 
+                   onclick="MainOnOffHanlder(this)">
         </div>
     </div>
 </section>
 
 <footer class="foo">
     <div class="foo_icon"><i class="fas fa-coffee"></i></div>
-    <div id="copyright">COPYRIGHT SEDY All Rights Reserved.</div>
+    <div id="copyright" >COPYRIGHT SEDY All Rights Reserved.</div>
     <div id="foo_userAgent">InternetBrowser is Not Support.</div>
 </footer>
-
 </body>
 </html>
