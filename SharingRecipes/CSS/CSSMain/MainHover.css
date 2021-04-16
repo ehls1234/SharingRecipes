@@ -19,4 +19,9 @@
     padding: 10px 20px;
 
 }
+
+#MainTextOnOff:hover{
+    transition: background-color .5s;
+    background-color: gray;
+}
 /*hover end*/
