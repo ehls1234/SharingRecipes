@@ -13,15 +13,18 @@
 
 #clock_random #DrinkRecipes:hover{
     transition: background-color .5s;
-    color: white;
     background-color: rgba(0, 0, 0, 0.473);
-    border-radius: 6px;
-    padding: 10px 20px;
-
 }
 
 #MainTextOnOff:hover{
     transition: background-color .5s;
     background-color: gray;
+}
+#MainTextOnOff,.navbar_menu .menu_item,#menu_item_link{
+    transition:all .3s linear;
+}
+
+#clock_random #DrinkRecipes{
+    transition:background-color .3s linear;
 }
 /*hover end*/

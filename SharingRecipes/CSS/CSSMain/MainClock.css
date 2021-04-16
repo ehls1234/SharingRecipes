@@ -34,6 +34,9 @@
 
 #clock_random #DrinkRecipes{
     display: inline-block;
-    padding: 10px 0;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: white;
 }
+
 /*clock end*/
