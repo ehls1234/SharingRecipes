@@ -1,8 +1,0 @@
-#coffee,#noncoffee {
-    transition: background-color .5s;
-  }
-  
-
-  .maincoffee:hover {
-    background-color: gray;
-  }
