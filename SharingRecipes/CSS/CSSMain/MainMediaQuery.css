@@ -121,3 +121,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     
     }
 /*mddia query 550px end*/
+@media screen and (max-width:490px){
+
+    #clock_item{
+        display: none;
+    }
+
+}
