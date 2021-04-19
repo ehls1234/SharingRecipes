@@ -20,7 +20,7 @@
     transition: background-color .5s;
     background-color: gray;
 }
-#MainTextOnOff,.navbar_menu .menu_item,#menu_item_link{
+#MainTextOnOff,#menu_item_link{
     transition:all .3s linear;
 }
 
