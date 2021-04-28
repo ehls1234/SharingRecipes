@@ -2,19 +2,23 @@ const weather = document.querySelector("#js-weather");
 const weather1 = document.querySelector("#js-weather1");
 const weather2 = document.querySelector("#js-weather2");
 const API_KEY = "c13f40978e5aeaf76792cac87a6b3de6";
+const lang = "kr"
+const units = "metric"
 const COORDS = 'coords';
 
 function getWeather(lat, lon){
     fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&lang=${lang}&units=${units}&appid=${API_KEY}`
     ).then(function(response){
         return response.json()
+       
     }).then(function(json){
-        const temperature = json.main.temp;
-        const place = json.name;
+        console.log(json)
+        const temperature = json.current.temp;
+        const place = json.timezone;
 
         let icon = null
-        switch (json.weather[0].main) {
+        switch (json.current.weather[0].main) {
 
             case 'Clear': 
                 icon = '<i class="fas fa-sun"></i>'
@@ -57,9 +61,8 @@ function getWeather(lat, lon){
         };
 
         weather1.innerHTML = `${icon}`;
-        weather2.innerHTML = `${json.weather[0].description}`;
+        weather2.innerHTML = `${json.current.weather[0].description}`;
         weather.innerHTML = `${temperature}℃ , ${place}`;
-        console.log(json)
     })
 };
 
@@ -90,7 +93,7 @@ function askForCoords(){
 
 function loadCoords(){
     const loadedCoords = localStorage.getItem(COORDS); 
-    /* 로컬 스토리지에 coords라는 이름으로 저장 */
+    /* 로컬 스토리지에 COORDS라는 이름으로 저장된것 얻기. */
     if(loadedCoords === null){
         askForCoords();
     } 
